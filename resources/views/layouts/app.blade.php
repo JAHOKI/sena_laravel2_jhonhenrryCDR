@@ -57,6 +57,7 @@
                     <form class="d-flex" role="BUSQUEDA">
                       <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
                       <button class="btn btn-primary" type="submit">BUSCAR</button>
+
                     </form>
                   </div>
                 </div>

@@ -29,7 +29,7 @@
         </div>
 
         <div class="mb-3">
-            <label for="VALOR" class="form-label">FACTURA O SOPORTE</label>
+            <label for="imagen" class="form-label">FACTURA O SOPORTE</label>
         <br>
             <input type="file" id="imagen" name="imagen">
 
@@ -37,6 +37,6 @@
         <br>
         <button type="submit" class="btn btn-success">Guardar</button>
     </form>
-
+<link rel="stylesheet" href="{{asset("css/app.css")}}">
 
 @endsection

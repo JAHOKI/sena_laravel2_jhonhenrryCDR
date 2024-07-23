@@ -56,7 +56,8 @@ class ProyectoController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $proyectoa = Proyecto::find($id);
+        return view('proyectos.edit',compact('proyectoa'));
     }
 
     /**
@@ -64,7 +65,16 @@ class ProyectoController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $proyectoa = Proyecto::find($id);
+        $proyectoa->fill($request->except('imagen'));
+        if($request->hasFile('imagen')){
+        $proyectoa->imagen = $request->file('imagen')->store('public/proyectos');
+        $proyectoa->save();
+        return 'LA MODIFICACION SE REALIZO CON EXITO AL PROYECTO PRODUCTIVO';
+    }
+
+
+
     }
 
     /**

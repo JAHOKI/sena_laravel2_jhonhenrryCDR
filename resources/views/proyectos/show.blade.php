@@ -11,7 +11,7 @@
         <p class="card-text">cantidad: {{$proyectoa->cantidad}}</p>
     </div>
     <br>
-    <a href="/cursos/{{$proyectoa->id}}/edit" class="btn btn-warning">Editar proyecto</a>
+    <a href="/proyectos/{{$proyectoa->id}}/edit" class="btn btn-warning">Editar proyecto</a>
     {{-- <a href="/cursos/{{$cursito->id}}/edit" class="btn btn-dark">Editar curso</a> --}}
 </div>
 
