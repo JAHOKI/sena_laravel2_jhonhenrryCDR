@@ -82,6 +82,19 @@ class ProyectoController extends Controller
      */
     public function destroy(string $id)
     {
+         // Buscar el proyecto por su ID
+    $proyectoa = Proyecto::find($id);
+
+    // Verificar si se encontró el proyecto
+    if ($proyectoa) {
+        // Eliminar el proyecto
+        $proyectoa->delete();
+        // Redirigir a la vista de lista de proyectos con un mensaje de éxito
+        return redirect()->route('proyectos.index')->with('success', 'El proyecto se ha eliminado con éxito.');
+    } else {
+        // Si no se encontró el proyecto, redirigir con un mensaje de error
+        return redirect()->route('proyectos.index')->with('error', 'El proyecto no fue encontrado.');
         //
     }
+}
 }
