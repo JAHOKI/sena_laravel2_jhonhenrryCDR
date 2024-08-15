@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PracticaController;
 use App\Http\Controllers\ProyectoController;
 use Illuminate\Support\Facades\Route;
 
@@ -9,5 +10,7 @@ Route::get('/', function () {
 });
 
 Route::resource('/proyectos', ProyectoController::class);
+
+Route::resource('/practicas', PracticaController ::class);
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
