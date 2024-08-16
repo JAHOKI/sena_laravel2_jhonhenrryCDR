@@ -5,7 +5,10 @@
 @section('contenido')
 
 <br>
+<div class="d-flex justify-content-center">
     <h3>CREAR PRACTICA EN PROYECTO AGROPECUARIO</h3>
+</div>
+
     <form action="/practicas" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="mb-3">
@@ -34,10 +37,12 @@
         </div>
 
 
-
         </div>
         <br>
-        <button type="submit" class="btn btn-success">Guardar</button>
+
+
+        <button style="text-align: center;" type="submit" class="btn btn-success">GUARDAR</button>
+
     </form>
 <link rel="stylesheet" href="{{asset("css/app.css")}}">
 
@@ -46,7 +51,7 @@
 
 <style>
     body {
-        background-color: #2279d1;
+        background-color: #93dcec;
     }
 
     .form-container {
@@ -75,6 +80,7 @@
 
     .btn-success {
         background-color: #28a745;
+        tex-aling: center;
         border-color: #28a745;
         transition: background-color 0.3s ease;
     }

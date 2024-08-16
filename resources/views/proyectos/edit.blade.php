@@ -45,7 +45,7 @@
   <style>
     body {
         font-family: 'Arial', sans-serif; /* Fuente general */
-        background-color: #530e48; /* Color de fondo */
+        background-color: #93dcec; /* Color de fondo */
         margin: 0;
         padding: 20px;
     }
@@ -54,7 +54,7 @@
         max-width: 1000px; /* Ancho máximo del contenedor */
         margin: 0 auto; /* Centrar el contenedor */
         padding: 20px;
-        background-color: #dedfb4; /* Color de fondo del contenedor */
+        background-color: #93dcec; /* Color de fondo del contenedor */
         border-radius: 20px; /* Bordes redondeados */
         box-shadow: 0 4px 8px rgba(43, 20, 126, 0.1); /* Sombra */
     }

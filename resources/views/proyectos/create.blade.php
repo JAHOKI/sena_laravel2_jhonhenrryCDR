@@ -44,7 +44,7 @@
 
 <style>
     body {
-        background-color: #2279d1;
+        background-color: #93dcec;
     }
 
     .form-container {
