@@ -73,7 +73,7 @@
                                 Mi Colegio
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Misión</a></li>
+                                <li><a class="dropdown-item" href="{{ route('mision') }}">Misión</a></li>
                                 <li><a class="dropdown-item" href="#">Visión</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="#">Logros académicos</a></li>
@@ -109,7 +109,6 @@
                         <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Search">
                         <button class="btn btn-primary" type="submit">BUSCAR</button>
                     </form>
-
                 </div>
             </div>
         </nav>
@@ -127,101 +126,101 @@
 
 
 
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
 
-@section('title', 'Lista de Prácticas')
 
-@section('content')
-    <div class="container mt-5">
-        <h1 class="text-center">Lista de Prácticas</h1>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Misión - Agropecuaria San José</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <style>
-            /* Estilos para la tabla */
-            .table {
-                background-color: #f8f9fa; /* Color de fondo de la tabla */
-                border-radius: 8px; /* Bordes redondeados para la tabla */
-                overflow: hidden; /* Para mantener los bordes redondeados en las esquinas */
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra alrededor de la tabla */
+            body {
+                background-color: #87CEEB; /* Azul cielo */
+                color: #2c6e49; /* Verde oscuro para la legibilidad */
             }
-
-            /* Estilo para las celdas de encabezado */
-            .table thead th {
-                background-color: #343a40; /* Color de fondo para los encabezados */
-                color: #fff; /* Color del texto de los encabezados */
-                text-align: center; /* Centrar texto en los encabezados */
-                padding: 10px; /* Espaciado interno */
+            h1 {
+                text-align: center;
+                animation: shine 1.5s infinite;
+                text-transform: uppercase; /* Título en mayúsculas */
             }
-
-            /* Estilo para las celdas de datos */
-            .table tbody td {
-                background-color: #fff; /* Color de fondo para las celdas de datos */
-                color: #343a40; /* Color del texto */
-                padding: 10px; /* Espaciado interno */
-                text-align: center; /* Centrar texto en las celdas */
+            @keyframes shine {
+                0% {
+                    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #66ff66, 0 0 20px #66ff66, 0 0 30px #66ff66;
+                }
+                50% {
+                    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #66ff66, 0 0 40px #66ff66;
+                }
+                100% {
+                    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #66ff66, 0 0 20px #66ff66, 0 0 30px #66ff66;
+                }
             }
-
-            /* Alternar color de fondo para filas impares */
-            .table tbody tr:nth-child(odd) {
-                background-color: #e9ecef;
+            p {
+                font-size: 1.2rem;
+                text-align: justify; /* Texto justificado */
+                margin-top: 20px;
             }
+            .cuadro {
+                border: 2px solid #2c6e49;
+                border-radius: 10px;
+                padding: 20px;
+                margin-top: 30px;
+                background-image: url('https://example.com/hojas
 
-            /* Estilo para los botones */
-            .btn-warning {
-                background-color: #ffc107;
-                border-color: #ffc107;
-                color: #343a40;
-                border-radius: 20px; /* Botones redondeados */
+            body {
+                background-color: #87CEEB; /* Azul cielo */
+                color: #2c6e49; /* Verde oscuro para la legibilidad */
             }
-
-            .btn-danger {
-                background-color: #dc3545;
-                border-color: #dc3545;
-                color: #fff;
-                border-radius: 20px; /* Botones redondeados */
+            h1 {
+                text-align: center;
+                animation: shine 1.5s infinite;
+                text-transform: uppercase; /* Título en mayúsculas */
             }
-
-            .btn-warning:hover, .btn-danger:hover {
-                background-color: #343a40; /* Cambiar color al pasar el ratón */
-                color: #fff; /* Color del texto al pasar el ratón */
+            @keyframes shine {
+                0% {
+                    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #66ff66, 0 0 20px #66ff66, 0 0 30px #66ff66;
+                }
+                50% {
+                    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #66ff66, 0 0 40px #66ff66;
+                }
+                100% {
+                    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #66ff66, 0 0 20px #66ff66, 0 0 30px #66ff66;
+                }
             }
-
-            /* Alinear el contenido de las celdas al centro */
-            .table td, .table th {
-                vertical-align: middle;
+            p {
+                font-size: 1.2rem;
+                text-align: justify; /* Texto justificado */
+                margin-top: 20px;
+            }
+            .cuadro {
+                border: 2px solid #2c6e49;
+                border-radius: 10px;
+                padding: 20px;
+                margin-top: 30px;
+                background-image: url('https://example.com/hojas.png'); /* Cambia esto por una imagen de hojas */
+                background-size: cover;
+                background-position: center;
+                color: white; /* Color del texto dentro del cuadro */
             }
         </style>
+    </head>
+    <body>
+        <div class="container mt-5">
+            <h1>Misión de la Institución Educativa Agropecuaria San José</h1>
 
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Tipo de Proyecto</th>
-                    <th>Grado</th>
-                    <th>Apellidos y Nombres</th>
-                    <th>Horas</th>
-                    <th>Docente</th>
-                    <th>Acciones</th> <!-- Agrega una columna para los botones de acción -->
-                </tr>
-            </thead>
-            <tbody>
-                @foreach ($practice as $item)
-                    <tr>
-                        <td>{{ $item->tipo_proyecto }}</td>
-                        <td>{{ $item->grado }}</td>
-                        <td>{{ $item->apellidos_nombres }}</td>
-                        <td>{{ $item->horas }}</td>
-                        <td>{{ $item->docente }}</td>
-                        <td>
-                            <!-- Botón para Editar -->
-                            <a href="{{ route('practicas.edit', $item->id) }}" class="btn btn-warning btn-sm">Editar</a>
 
-                            <!-- Botón para Eliminar -->
-                            <form action="{{ route('practicas.destroy', $item->id) }}" method="POST" style="display: inline;">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Estás seguro de que quieres eliminar esta práctica?');">Eliminar</button>
-                            </form>
-                        </td>
-                    </tr>
-                @endforeach
-            </tbody>
-        </table>
-    </div>
+<div class="cuadro">
+                <p>La misión de la Institución Educativa Agropecuaria San José es formar profesionales íntegros con un enfoque en la sostenibilidad, promoviendo el desarrollo agropecuario y la conservación del medio ambiente mediante una educación de calidad que fortalezca las competencias técnicas y socio-emocionales de nuestros estudiantes.</p>
+            </div>
+
+        </div
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+

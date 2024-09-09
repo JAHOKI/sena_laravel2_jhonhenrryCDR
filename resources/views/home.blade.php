@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,8 +74,8 @@
                                 Mi Colegio
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Misión</a></li>
-                                <li><a class="dropdown-item" href="#">Visión</a></li>
+                                <li><a class="dropdown-item" href="{{ route('mision') }}">Misión</a></li>
+                                <li><a class="dropdown-item" href="{{ route('vision') }}">Visión</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="#">Logros académicos</a></li>
                                 <li><a class="dropdown-item" href="#">Gestión jurídica</a></li>
@@ -244,7 +245,6 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
   </html>
-
 
 
 
