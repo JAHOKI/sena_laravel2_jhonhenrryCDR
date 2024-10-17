@@ -1,3 +1,4 @@
+
 {
     "name": "laravel/laravel",
     "type": "project",
@@ -64,4 +65,8 @@
     },
     "minimum-stability": "stable",
     "prefer-stable": true
+
+
+
 }
+
