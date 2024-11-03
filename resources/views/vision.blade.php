@@ -1,62 +1,52 @@
 
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visión - Agropecuaria San José</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #87CEEB; /* Azul cielo */
-            color: #2c6e49; /* Verde oscuro para la legibilidad */
-        }
-        h1 {
-            text-align: center;
-            animation: shine 1.5s infinite;
-            text-transform: uppercase; /* Título en mayúsculas */
-        }
-        @keyframes shine {
-            0% {
-                text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #66ff66, 0 0 20px #66ff66, 0 0 30px #66ff66;
-            }
-            50% {
-                text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #66ff66, 0 0 40px #66ff66;
-            }
-            100% {
-                text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #66ff66, 0 0 20px #66ff66, 0 0 30px #66ff66;
-            }
-        }
-        p {
-            font-size: 1.2rem;
-            text-align: justify; /* Texto justificado */
-            margin-top: 20px;
-        }
-        .cuadro {
-            border: 2px solid #2c6e49;
-            border-radius: 10px;
-            padding: 20px;
-            margin-top: 30px;
-            background-image: url('https://example.com/hojas.png'); /* Cambia esto por una imagen de hojas */
-            background-size: cover;
-            background-position: center;
-            color: white; /* Color del texto dentro del cuadro */
-        }
-    </style>
+    <title>Visión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style/css/vision.css">
 </head>
+
 <body>
     <div class="container mt-5">
-        <h1>Visión de la Institución Educativa Agropecuaria San José</h1>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="vision-card card shadow-lg border-0 mb-5">
+                    <div class="card-body p-5">
+                        <h1 class="mision-title text-center mb-4">
+                            Visión de la Institución Educativa San José
+                        </h1>
+                        <div class="text-center mb-4">
+                            <hr class="divider">
+                        </div>
 
-        <div class="cuadro">
-            <h2>Visión</h2>
-            <p>La visión de la Institución Educativa Agropecuaria San José es ser reconocida como una entidad líder en la formación integral de profesionales en el ámbito agropecuario, que contribuyan al desarrollo sostenible y al bienestar de la comunidad, promoviendo una educación innovadora y de alta calidad que responda a las necesidades del entorno.</p>
+                        <div class="vision-content">
+                            <p class="lead mb-0">
+                                PROPORCIONAR UNA EDUCACIÓN INTEGRAL BASADA EN VALORES, CON UN ENFOQUE SOSTENIBLE Y UNA FORMACIÓN TÉCNICA ESPECIALIZADA EN EL SECTOR AGROPECUARIO, QUE FOMENTE EL CRECIMIENTO PERSONAL Y PROFESIONAL DE LOS ESTUDIANTES, IMPULSANDO SU COMPROMISO CON LA CONSERVACIÓN DEL MEDIO AMBIENTE Y EL DESARROLLO DE LA COMUNIDAD. BUSCAMOS FORMAR LÍDERES CAPACES DE CONTRIBUIR ACTIVAMENTE AL PROGRESO AGROPECUARIO, ADAPTÁNDOSE A LOS CAMBIOS SOCIALES Y TECNOLÓGICOS, Y QUE SE DESTAQUEN POR SUS LOGROS
+                            </p>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <p class="lead mb-0 text-center">
+                            <a href="javascript:history.back()" class="btn btn-primary btn-lg px-5 return-button">
+                                <i class="fas fa-arrow-left me-2"></i>Regresar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="style/js/vision.js"></script>
 </body>
+
 </html>
+
+

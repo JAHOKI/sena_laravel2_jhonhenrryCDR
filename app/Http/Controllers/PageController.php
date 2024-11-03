@@ -36,4 +36,10 @@ class PageController extends Controller
     {
         return view('proyectos-productivos'); // Retorna la vista para Proyectos Productivos
     }
+
+    public function primaria()
+    {
+        return view('primaria'); // Retorna la vista de primaria
+    }
+
 }

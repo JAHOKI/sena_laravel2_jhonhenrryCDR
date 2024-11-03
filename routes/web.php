@@ -41,7 +41,7 @@ Route::get('/mision', [PageController::class, 'mision'])->name('mision');
 Route::get('/vision', [PageController::class, 'vision'])->name('vision');
 
 // Ruta para Logros Académicos
-Route::get('/logrosaca', [PageController::class, 'logrosAcademicos'])->name('logros.academicos');
+Route::get('/logroaca', [PageController::class, 'logrosAcademicos'])->name('logros.academicos');
 
 // Ruta para Gestión Jurídica
 Route::get('/gestion-juridica', [PageController::class, 'gestionJuridica'])->name('gestion.juridica');
@@ -51,3 +51,27 @@ Route::get('/logros-directivos', [PageController::class, 'logrosDirectivos'])->n
 
 // Ruta para Proyectos Productivos
 Route::get('/proyectos-productivos', [PageController::class, 'proyectosProductivos'])->name('proyectos.productivos');
+
+//Ruta  para primaria
+Route::get('/primaria', [PageController::class, 'primaria'])->name('primaria');
+//Ruta para Secundaria
+
+//Ruta para Media Tecnica
+
+//docentes
+
+//Administrativos
+
+//Directivos
+
+
+
+
+
+Route::get('/perfil/editar', [PerfilController::class, 'editar'])->name('perfil.editar');
+Route::get('/contenido/publicar', [ContenidoController::class, 'publicar'])->name('contenido.publicar');
+Route::get('/noticias/ver', [NoticiasController::class, 'ver'])->name('noticias.ver');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
