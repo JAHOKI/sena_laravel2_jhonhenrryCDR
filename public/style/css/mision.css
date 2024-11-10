@@ -58,6 +58,13 @@
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
+.return-button {
+    margin: 2rem 0;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
 /* Animación de entrada */
 @keyframes fadeIn {
     from {
@@ -84,3 +91,4 @@
         padding: 0.5rem 1.5rem !important;
     }
 }
+
