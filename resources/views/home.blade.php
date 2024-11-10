@@ -1,78 +1,106 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CDR-SAN JOSE - @yield('titulo')</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-@section('contenido') <!-- Aquí se define el nombre de la sección -->
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> <!-- Añadido data-bs-ride para que el carrusel funcione -->
- <div class="carousel-indicators">
- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide1"></button>
- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide2"></button>
- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide3"></button>
- </div>
- <div class="carousel-inner">
- <div class="carousel-item active">
- <img src="{{ asset('images/GALLO.png') }}" class="d-block w-25 mx-auto" alt="">
- </div>
- <div class="carousel-item">
- <img src="{{ asset('images/gallina.png') }}" class="d-block w-25 mx-auto" alt="...">
- </div>
- <div class="carousel-item">
- <img src="{{ asset('images/CERDO.png') }}" class="d-block w-25 mx-auto" alt="...">
- </div>
- </div>
- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
- <span class="visually-hidden">Previous</span>
- </button>
- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
- <span class="carousel-control-next-icon" aria-hidden="true"></span>
- <span class="visually-hidden">Next</span>
- </button>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img src="{{ asset('images/logo.png') }}" alt="CDR" style="width: 40px; height: auto;">
+                <a class="navbar-brand">San Jose CDR</a>
+                <a class="navbar-brand" href="{{ route('home') }}">Mi cole</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+                        <li class="nav-item dropdown flex-grow-1">
+                            <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Como es
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/mision">Misión</a></li>
+                                <li><a class="dropdown-item" href="/vision">Visión</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="/logroaca">Logros académicos</a></li>
+                                <li><a class="dropdown-item" href="/gestion-juridica">Gestión jurídica</a></li>
+                                <li><a class="dropdown-item" href="/logros-directivos">Logros Directivos</a></li>
+                                <li><a class="dropdown-item" href="/proyectos-productivos">Proyectos Productivos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown flex-grow-1">
+                            <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Escolaridad
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/primaria">Primaria</a></li>
+                                <li><a class="dropdown-item" href="#">Secundaria</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Media Técnica</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown flex-grow-1">
+                            <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Talento Humano
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Docentes</a></li>
+                                <li><a class="dropdown-item" href="#">Administrativos</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Directivos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <button class="btn btn-primary me-2" type="button" onclick="window.location.href='/login'">Login</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content text-center">
+            <h1 class="display-4 fw-bold">Institución Educativa San José</h1>
+            <p class="lead mt-3">Formando líderes rurales con excelencia y valores</p>
+            <a href="#" class="btn btn-success btn-lg mt-4">Conoce más sobre nosotros</a>
+        </div>
+    </section>
+
+    <!-- Quick Access Cards -->
+    <section class="quick-access py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <a href="/juridica" class="text-decoration-none">
+                        <div class="access-card">
+                            <img src="/api/placeholder/400/200" alt="Gestión Jurídica">
+                            <div class="access-overlay">Gestión Jurídica</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container text-center">
+            <p>La IE San José es una institución educativa rural comprometida con la formación integral y el desarrollo sostenible de nuestra comunidad.</p>
+            <p>&copy; 2024 CDR San José</p>
+        </div>
+    </footer>
+
 </div>
 
-<!-- Sección de Información de Interés -->
-<section class="info-section">
- <div class="container">
- <h2 class="text-center mb-5">Información de Interés</h2>
- <div class="row">
- <!-- Noticias -->
- <div class="col-md-4">
- <div class="info-card">
- <img src="{{ asset('images/granja.png') }}" alt="Noticias" class="img-fluid">
- <div class="info-card-body">
- <h5 class="info-card-title">Noticias</h5>
- <p class="info-card-text">Mantente informado con las últimas noticias sobre nuestras actividades y eventos.</p>
- <a href="#" class="btn btn-primary">Leer más</a>
- </div>
- </div>
- </div>
-
- <!-- Matrículas -->
- <div class="col-md-4">
- <div class="info-card">
- <img src="{{ asset('images/matricula.png') }}" alt="Matrículas" class="img-fluid">
- <div class="info-card-body">
- <h5 class="info-card-title">Matrículas</h5>
- <p class="info-card-text">Infórmate sobre el proceso de matrículas y cómo inscribirte en nuestros programas educativos.</p>
- <a href="#" class="btn btn-primary">Leer más</a>
- </div>
- </div>
- </div>
-
- <!-- Proyectos Agropecuarios -->
- <div class="col-md-4">
- <div class="info-card">
- <img src="{{ asset('images/colegio.png') }}" alt="Proyectos Agropecuarios" class="img-fluid">
- <div class="info-card-body">
- <h5 class="info-card-title">Proyectos Agropecuarios</h5>
- <p class="info-card-text">Descubre los proyectos agropecuarios en los que nuestros estudiantes participan activamente.</p>
- <a href="#" class="btn btn-primary">Leer más</a>
- </div>
- </div>
- </div>
- </div>
- </div>
-</section>
-
-<!-- Scripts de Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-@endsection
-
+</body>
+</html>

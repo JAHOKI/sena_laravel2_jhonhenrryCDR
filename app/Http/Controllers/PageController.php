@@ -42,4 +42,13 @@ class PageController extends Controller
         return view('primaria'); // Retorna la vista de primaria
     }
 
+    public function secundaria()
+    {
+        return view('secundaria'); // Retorna la vista de secundaria
+    }
+
+    public function media()
+    {
+        return view('media'); // Retorna la vista de media tecnica
+    }
 }

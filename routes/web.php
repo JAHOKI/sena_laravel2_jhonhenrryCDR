@@ -55,9 +55,9 @@ Route::get('/proyectos-productivos', [PageController::class, 'proyectosProductiv
 //Ruta  para primaria
 Route::get('/primaria', [PageController::class, 'primaria'])->name('primaria');
 //Ruta para Secundaria
-
+Route::get('/secundaria', [PageController::class, 'secundaria'])->name('secundaria');
 //Ruta para Media Tecnica
-
+Route::get('/media', [PageController::class, 'media'])->name('media');
 //docentes
 
 //Administrativos
