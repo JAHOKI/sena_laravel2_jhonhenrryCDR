@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primaria - IE San José</title>
+    <title>Primaria</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style/css/primaria.css">
 </head>
@@ -49,9 +49,9 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="/primaria">Primaria</a></li>
-                                <li><a class="dropdown-item" href="#">Secundaria</a></li>
+                                <li><a class="dropdown-item" href="/secundaria">Secundaria</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Media Técnica</a></li>
+                                <li><a class="dropdown-item" href="/media">Media Técnica</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -105,7 +105,7 @@
                         </select>
                     </div>
 
-                    <!-- Submenú dinámico para seleccionar subgrado -->
+                    <!-- seleccionar subgrado -->
                     <div class="mb-3" id="subgradoContainer" style="display: none;">
                         <label for="subgrado" class="form-label">Subgrado</label>
                         <select class="form-select" id="subgrado" required>
@@ -173,7 +173,7 @@
                             <option selected disabled>Seleccione la sede</option>
                             <option value="Sede Principal">Sede Principal CDR</option>
                             <option value="Sede Secundaria">Sede Secundaria</option>
-                            <option value="Sede Rural">Jardín Nueva Siglo</option>
+                            <option value="Sede Rural">Jardín Nuevo Siglo</option>
                         </select>
                     </div>
 
@@ -226,7 +226,7 @@
             <!-- Jardín -->
             <div class="col-md-4">
                 <div class="card grado-card">
-                    <img src="/api/placeholder/400/300" class="card-img-top" alt="Jardín">
+                    <img src="images/jardin.jpeg" "/api/placeholder/400/300" class="card-img-top" alt="Jardín">
                     <div class="card-body">
                         <h3 class="card-title">Jardín (4 años)</h3>
                         <p class="card-text">Fortalecemos habilidades básicas:</p>
@@ -243,7 +243,7 @@
             <!-- Primaria -->
             <div class="col-md-4">
                 <div class="card grado-card">
-                    <img src="/api/placeholder/400/300" class="card-img-top" alt="Primaria">
+                    <img src="images/primaria.jpeg"/api/placeholder/400/300" class="card-img-top" alt="Primaria">
                     <div class="card-body">
                         <h3 class="card-title">Primaria (6-11 años)</h3>
                         <p class="card-text">Educación integral con énfasis en:</p>

@@ -51,4 +51,10 @@ class PageController extends Controller
     {
         return view('media'); // Retorna la vista de media tecnica
     }
+
+    public function docentes()
+    {
+        return view('docentes'); // Retorna la vista de media tecnica
+    }
 }
+

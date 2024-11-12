@@ -59,11 +59,11 @@ Route::get('/secundaria', [PageController::class, 'secundaria'])->name('secundar
 //Ruta para Media Tecnica
 Route::get('/media', [PageController::class, 'media'])->name('media');
 //docentes
-
+Route::get('/docentes', [PageController::class, 'docentes'])->name('docentes');
 //Administrativos
-
+Route::get('/administrativos', [PageController::class, 'administrativos'])->name('administrativos');
 //Directivos
-
+Route::get('/directivos', [PageController::class, 'directivos'])->name('ddirectivos');
 
 
 
